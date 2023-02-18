@@ -64,7 +64,7 @@ const EmbedDashboard = () => {
         <PageTitle text={"Embedded Dashboard"} />
         <LoadingSpinner loading={loading} />
         {/* Step 0) we have a simple container, which performs a callback to our makeDashboard function */}
-        <Dashboard ref={makeDashboard}></Dashboard>
+        <Dashboard  ref={makeDashboard}></Dashboard>
       </div>
     </Space>
   );

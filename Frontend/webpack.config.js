@@ -54,7 +54,7 @@ module.exports = {
           loader: "babel-loader",
           options: {
             "presets": [
-              "@babel/preset-env", 
+              "@babel/preset-env",
               "@babel/preset-react",
               {
                 'plugins': ["@babel/plugin-transform-runtime", '@babel/plugin-proposal-class-properties']
@@ -75,7 +75,8 @@ module.exports = {
       templateContent: `
         <html>
           <head>
-            <title>Looker Embedded Reference Implementation</title>
+            <title>Elizabeth</title>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
           </head>
           <body>
             <div class="fullpage">
