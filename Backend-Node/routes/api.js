@@ -1,10 +1,16 @@
 var express = require("express");
+
 var config = require("../config");
 var router = express.Router();
 const { LookerNodeSDK } = require("@looker/sdk-node");
 const sdk = LookerNodeSDK.init40();
 
 var createSignedUrl = require("../auth/auth_utils");
+
+
+const helmet = require("helmet");
+const app = express();
+app.use(helmet.frameguard({ action: "SAMEORIGIN" }));
 
 /*****************************************
  * Authentication                        *

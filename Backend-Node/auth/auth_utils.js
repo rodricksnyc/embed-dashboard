@@ -14,12 +14,12 @@
 
 /*
  * This exports a utility function for generating signed URLs for embedding
- * https://docs.looker.com/reference/embedding/sso-embed#building_the_embed_url 
+ * https://docs.looker.com/reference/embedding/sso-embed#building_the_embed_url
  *
  * It is used by the /auth endpoint
  */
 
-var createHmac = require('create-hmac') 
+var createHmac = require('create-hmac')
 
 function stringify (params) {
   const result = []
